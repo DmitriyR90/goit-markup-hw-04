@@ -175,6 +175,7 @@ body {
 }
 /* --------- Особенности section --------- */
 .section-title-text {
+  margin-top: 30px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -185,6 +186,19 @@ body {
 .specs {
   display: flex;
 }
+/* .specs .list::before {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-bg-color);
+  background-image: url(../images/logos/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 4px;
+} */
+
 .specs .list:not(:last-child) {
   margin-right: 30px;
 }
@@ -251,22 +265,63 @@ body {
 .conteiner-team {
   padding-bottom: 94px;
 }
-.workers-social-list {
+.social-list {
   display: flex;
   justify-content: center;
   background-color: transparent;
 }
-.workers-social-item + .workers-social-item {
+.social-item + .social-item {
   margin-left: 10px;
 }
-.workers-social-link {
+.social-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: block;
-  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+.workers-social-icon {
+  fill: currentColor;
+}
+.social-link:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
+/* --------- наши клиенты section --------- */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+.clients-link {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+.clients-item {
+  padding: 16px;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  border: 1px solid #afb1b8;
+}
 /* --------- footer section --------- */
 .logo-ins-wt {
   color: var(--main-bg-color);
@@ -296,12 +351,34 @@ body {
   display: inline-block;
   margin-right: 0;
 }
-
 .site-address .list {
   display: block;
 }
 .site-address .list:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-site {
+  display: flex;
+}
+.connect-link {
+  margin-left: 70px;
+}
+.connect-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.footer-link:hover {
+  background-color: #2196f3;
 }
 
 /* --------- СТРАНИЦА ПОРТФОЛИО --------- */
